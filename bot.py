@@ -1,10 +1,10 @@
-import discord
-import responses
+import discord 
+from .responses import handle_response
 
 async def send_message(message):
     try:
 
-        response = responses.handle_response(message)
+        response = handle_response(message)
         await message.channel.send(response)
 
     except Exception as e:
