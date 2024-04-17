@@ -9,6 +9,9 @@ headers = {
 
 conversation_history = []
 
+def delete_context():
+    del conversation_history[:]
+
 def generate_response(prompt):
     # conversation history so that LLM has context for new prompts
     conversation_history.append(prompt)
