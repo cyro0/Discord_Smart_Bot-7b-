@@ -19,7 +19,7 @@ def generate_response(prompt):
     full_prompt = "\n".join(conversation_history)
 
     data = {
-        "model": "wizardlm_unc",
+        "model": "wizardlm_unc:latest",
         "stream": False,
         "prompt": full_prompt,
     }
