@@ -11,7 +11,7 @@ async def send_message(message):
         print(e)
 
 def run_bot():
-    TOKEN = 'MTIzMDA3NTQ1ODc4MDAwODQ5OQ.Gy3OIj.Byg2Ub1p1mYolqWO3vOY2OBh2EcR5FTB-ST7iM'
+    TOKEN = ''
 
     intents = discord.Intents.all()
 
