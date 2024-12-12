@@ -1,4 +1,4 @@
-import discord 
+import discord, constants
 from .responses import handle_response
 
 async def send_message(message):
@@ -11,7 +11,7 @@ async def send_message(message):
         print(e)
 
 def run_bot():
-    TOKEN = ''
+    TOKEN = constants.TOKEN
 
     intents = discord.Intents.all()
 
