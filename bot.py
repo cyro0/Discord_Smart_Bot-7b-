@@ -1,9 +1,9 @@
-import discord, constants
-from .responses import handle_response
+import discord
+from constants import TOKEN
+from responses import handle_response
 
 async def send_message(message):
     try:
-
         response = handle_response(message)
         await message.channel.send(response)
 
@@ -11,7 +11,7 @@ async def send_message(message):
         print(e)
 
 def run_bot():
-    TOKEN = constants.TOKEN
+    BOT_TOKEN = TOKEN
 
     intents = discord.Intents.all()
 
@@ -34,4 +34,4 @@ def run_bot():
 
             await send_message(message)
 
-    client.run(TOKEN)
+    client.run(BOT_TOKEN)
